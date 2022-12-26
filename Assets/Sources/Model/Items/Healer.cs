@@ -14,7 +14,7 @@ public class Healer : Item
 
     public event Action<int> Interacted;
 
-    public override void Interact()
+    public override void Interact(Player player)
     {
         Interacted?.Invoke(Points);
     }

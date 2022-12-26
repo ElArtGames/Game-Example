@@ -14,7 +14,7 @@ public class Booster : Item
     }
 
     public event Action Interacted;
-    public override void Interact()
+    public override void Interact(Player player)
     {
         Interacted?.Invoke();
     }

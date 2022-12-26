@@ -1,7 +1,7 @@
 public class Score
 {
+    private ItemVisitor _visitor = new ItemVisitor();
     public int _accumulated => _visitor.AccumulatedScore;
-    private ItemVisitor _visitor;
 
     void AddPoints(Item item)
     {
